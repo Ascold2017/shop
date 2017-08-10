@@ -328,14 +328,13 @@ body{
 .partners_slider{
     width: 100%;
     position: relative;
-}
+} 
 .partners__slide{
     position: relative;
     height: 125px;
 }
 .partners__img{
-   position: absolute;
-    bottom: 0;
+    margin: 0 auto;
 }
 .arrownext{
     position: absolute;
