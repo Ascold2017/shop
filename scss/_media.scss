@@ -23,6 +23,19 @@
         display: flex;
         justify-content: space-between;
     }
+    .nav_container{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+        
+    }
+    .nav_mobile{
+        display: block;
+        .mobile_menu_list{
+            display: none;}
+    }
+    
 }
 	/**/
 
@@ -32,14 +45,33 @@
     .partners_slider{
         width: 90%;
     }
+    .footer_menu__list{
+        width: 100%;
+    }
     }
 	/**/
 
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px){
-    
+@media only screen and (max-width : 600px){
+    .footer_menu__list{
+        flex-direction: column;
+        align-items: center;
     }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 490px){
+    .header_main_block__right{
+        flex-direction: column;
+    }
+    .header_account_block{
+        margin-top: 20px;
+    }
+     .phone__container .phone__number{
+        font-size: 20px;
+    }
+    .phone__link .phone__img{
+        height: 20px;
+    }
+}
 	/**/
 
 
