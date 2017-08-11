@@ -1079,7 +1079,7 @@ body{
     display: flex;
     margin-top: 47px;
 }
-.characteristic__left{
+.characteristic__left,.characteristic__right{
     
     width: 50%;
 }
@@ -1137,7 +1137,7 @@ body{
     font-weight: 400;
 }
 .tobasket__button{
-    display: block;
+    display: inline-block;
     position: relative;
     background-color: #a21c26;
     border: 0;
