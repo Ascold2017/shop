@@ -1,0 +1,133 @@
+//PRODUCT BEGIN
+.product_container{
+    display: flex;
+    padding: 45px 0 110px;
+    .product_left,.product_right{
+        width: 50%;
+    }
+}
+.product_photo{
+    display: block;
+    &.main{
+        width: 100%;
+    }
+    .product_img{
+        width: 100%;
+    }
+}
+.gallery__preview{
+    margin-top: 15px;
+    display: flex;
+}
+//GALLERY END
+//CONTENT BEGIN
+.product_section__title{
+    max-width: 80%;
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.product_article.product_section__article{
+    display: inline-block;
+    padding: 0;
+}
+.product_rating.product_section__article{
+    display: inline-block;
+}
+.product_section__text{
+    width: 100%;
+    margin-top: 30px;
+    text-align: justify;
+    color: #3e3e3e;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.product_section_characteristic_container{
+    display: flex;
+    margin-top: 47px;
+}
+.characteristic__left,.characteristic__right{
+    
+    width: 50%;
+}
+.characteristic__title{
+    color: #3e3e3e;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.characteristic_list{
+    padding-right: 20px;
+    .characteristic__item{
+        padding: 0 10px;
+        color: #3e3e3e;
+        font-family: "Proxima Nova";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        &:nth-child(even){
+            background-color: #ffffff;
+            
+        }
+        &:nth-child(odd){
+            background-color: #f2f2f2;
+        }
+    }
+}
+.characteristic__right .characteristic_list{
+    padding-right: 0;
+}
+.product_section_tobasket_container{
+    margin-top: 48px;
+    display: flex;
+}
+.tobasket_left,.tobasket_right{
+    width: 50%;
+}
+.tobasket__available{
+    color: #64b7eb;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 20px;
+}
+.tobasket__price{
+    color: #3e3e3e;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 400;
+}
+.tobasket__button{
+    display: inline-block;
+    position: relative;
+    background-color: #a21c26;
+    border: 0;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 53px;
+    padding: 0 50px 0 20px;
+    cursor: pointer;
+    .tobasket_button__icon{
+       position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+}
+.product_stock.productpage{
+    padding: 0 0 50px;
+}
+
+@import "product_media";

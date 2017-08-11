@@ -1,0 +1,58 @@
+@media only screen and (max-width : 1130px){
+     .contactform{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactform__left{
+        width: 100%;
+    }
+    .contactform__right{
+        width: 100%;
+        text-align: center;
+    }
+    .contactform__info{
+        text-align: center;
+    }
+    .contactform__input{
+        width: 70%;
+    }
+    .contactform__info{
+        padding: 15px 0;
+    }
+}
+@media only screen and (max-width : 1024px){
+    .basket__counter{
+        width: 155px;
+    }
+}
+@media only screen and (max-width : 700px){
+    .input_wrapper{
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (max-width : 630px){
+     .basket__photo,.basket__description{
+        width: 50%;
+    }
+    .basket__counter, .basket__price--one, .basket__price--total, .basket__clear{
+        width: 25%;
+    }
+    .basket__clear{
+        margin: 0;
+        padding-left: 20px;
+        box-sizing: border-box;
+          border: 1px solid #f2f2f2;
+    }
+}
+@media only screen and (max-width : 600px){
+    .basket__counter, .basket__price--one, .basket__price--total, .basket__clear{
+        width: 50%;
+    }
+}
+@media only screen and (max-width : 380px){
+    .contactform__label{
+        width: 70px;
+    }
+    }

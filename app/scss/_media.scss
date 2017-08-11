@@ -1,0 +1,127 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px){
+    .partners_slider{
+        width: 90%;
+    }
+}
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 960px){
+    .header_main_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_main_block__right{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_container{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+        
+    }
+    .nav_mobile{
+        display: block;
+        .mobile_menu_list{
+            display: none;}
+    }
+    
+    
+}
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+    .partners_slider{
+        width: 80%;
+    }
+    .footer_menu__list{
+        width: 100%;
+    }
+    
+}
+	/**/
+
+@media only screen and (max-width : 600px){
+    .footer_menu__list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 490px){
+    .header_main_block__right{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_account_block{
+        margin-top: 20px;
+    }
+     .phone__container .phone__number{
+        font-size: 20px;
+    }
+    .phone__link .phone__img{
+        height: 20px;
+    }
+    
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+    
+    }
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+    
+    }
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+    
+    }
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+    
+    }
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+    
+    }
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+    
+    }
+	/**/
+
