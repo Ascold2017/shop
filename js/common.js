@@ -98,4 +98,63 @@ $(document).ready(function(){
         appentTo: '.searchform',
     });
     
+    $(function() {
+        $( "#slider" ).slider({
+              range: true,
+              min: 120,
+              max: 28500,
+              values: [ 120, 28500 ],
+              range: true,
+            stop: function(event, ui) {
+                $(".price_form__input.start" ).val($( "#slider" ).slider( "values", 0 ));
+                $(".price_form__input.end" ).val($( "#slider" ).slider( "values", 1 ));
+            },
+            slide: function(event, ui){
+                $(".price_form__input.start" ).val($( "#slider" ).slider( "values", 0 ));
+                $(".price_form__input.end" ).val($("#slider" ).slider( "values", 1 ));
+             }
+        });
+        
+        jQuery(".price_form__input.start").change(function(){
+
+           var value1=jQuery(".price_form__input.start").val();
+           var value2=jQuery(".price_form__input.end").val();
+
+           if(parseInt(value1) > parseInt(value2)){
+               value1 = value2;
+               jQuery(".price_form__input.start").val(value1);
+           }
+           jQuery("#slider").slider("values",0,value1);	
+       });
+
+	
+        jQuery(".price_form__input.end").change(function(){
+
+            var value1=jQuery(".price_form__input.start").val();
+            var value2=jQuery(".price_form__input.end").val();
+
+            if (value2 > 1000) { value2 = 1000; jQuery(".price_form__input.end").val(1000)}
+
+            if(parseInt(value1) > parseInt(value2)){
+                value2 = value1;
+                jQuery(".price_form__input.end").val(value2);
+            }
+            jQuery("#slider").slider("values",1,value2);
+        });
+
+    } );
+    // фильтрация ввода в поля
+	jQuery('input').keypress(function(event){
+		var key, keyChar;
+		if(!event) var event = window.event;
+		
+		if (event.keyCode) key = event.keyCode;
+		else if(event.which) key = event.which;
+	
+		if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+		keyChar=String.fromCharCode(key);
+		
+		if(!/\d/.test(keyChar))	return false;
+	
+	});
 });

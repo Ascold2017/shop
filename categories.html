@@ -23,8 +23,9 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
+ 
 </head>
 
 <body>
@@ -143,18 +144,19 @@
            </div>
 	   </div>
 	</nav>
+	
 	<!--MAIN START-->
 	<div class="wrapper">
         <div class="main_container">
             <aside class="sidebar">
                 <article class="price_form_container">
                     <form action="" class="price_form__form">
-                        <div class="price_form__title">Цена(<i class="fa fa-rub" aria-hidden="true"></i>)</div>
-                        <input type="text" class="price_form__input start">
-                        <input type="text" class="price_form__input end">
+                        <div class="price_form__title">Цена("<i class="fa fa-rub" aria-hidden="true"></i>")</div>
+                        <div class="price_input_wrap"><input type="text" class="price_form__input start">- </div>
+                        <div class="price_input_wrap"><input type="text" class="price_form__input end"></div>
                         <div class="progress_container">
                             <span class="price_form__start">120</span>
-                            <input type="range" class="progress">
+                            <div id="slider"></div>
                             <span class="price_form__end">28500</span>
                         </div>
                     </form>
