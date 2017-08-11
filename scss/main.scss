@@ -618,6 +618,7 @@ body{
 }
 .basket__item{
     display: flex;
+    flex-wrap: wrap;
 }
 .basket__photo{
     width: 8.5%;

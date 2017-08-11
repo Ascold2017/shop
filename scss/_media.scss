@@ -106,14 +106,24 @@
         width: 33%;
     }
     .basket__item{
-        flex-direction: column;
-        align-items: center;
     }
-    .basket__photo,.basket__description, .basket__counter, .basket__price--one, .basket__price--total{
-        width: 100%;
-}
+    .basket__photo,.basket__description{
+        width: 50%;
+    }
+    .basket__counter, .basket__price--one, .basket__price--total, .basket__clear{
+        width: 25%;
+    }
+    .basket__clear{
+        margin: 0;
+        padding-left: 20px;
+        box-sizing: border-box;
+          border: 1px solid #f2f2f2;
+    }
 }
 @media only screen and (max-width : 600px){
+    .basket__counter, .basket__price--one, .basket__price--total, .basket__clear{
+        width: 50%;
+    }
     .footer_menu__list{
         flex-direction: column;
         align-items: center;
