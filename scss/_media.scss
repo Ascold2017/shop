@@ -8,6 +8,36 @@
         width: 95%;
     }
 }
+@media only screen and (max-width : 1130px){
+    .contactform{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactform__left{
+        width: 100%;
+    }
+    .contactform__right{
+        width: 100%;
+        text-align: center;
+    }
+    .contactform__info{
+        text-align: center;
+    }
+    .contactform__input{
+        width: 70%;
+    }
+    .contactform__info{
+        padding: 15px 0;
+    }
+}
+@media only screen and (max-width : 1024px){
+    .basket__counter{
+        width: 155px;
+    }
+    /*
+    
+    }*/
+}
 	/**/
 
 
@@ -38,7 +68,11 @@
     
 }
 	/**/
-
+@media only screen and (max-width : 700px){
+    .input_wrapper{
+        width: 100%;
+    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
@@ -50,7 +84,15 @@
     }
     }
 	/**/
-
+@media only screen and (max-width : 630px){
+    .basket__item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .basket__photo,.basket__description, .basket__counter, .basket__price--one, .basket__price--total{
+        width: 100%;
+}
+}
 @media only screen and (max-width : 600px){
     .footer_menu__list{
         flex-direction: column;
@@ -75,7 +117,11 @@
 }
 	/**/
 
-
+@media only screen and (max-width : 380px){
+    .contactform__label{
+        width: 70px;
+    }
+    }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
     
