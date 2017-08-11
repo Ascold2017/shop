@@ -159,4 +159,5 @@ $(document).ready(function(){
 		if(!/\d/.test(keyChar))	return false;
 	
 	});
+    $(".product_photo").fancybox();
 });
