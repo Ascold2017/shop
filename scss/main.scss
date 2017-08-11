@@ -350,11 +350,9 @@ body{
 .top_slider{
     position: relative;
     width: 100%;
-    .top_slider__slide{
-        .top_slider_img{
-            width: 100%;
-        }
-    }
+    background-image: url("../img/header_bg.png");
+    background-size: cover;
+    height: 370px;
     .arrow{
         position: absolute;
         display: block;
@@ -407,6 +405,7 @@ body{
 .partners_slider{
     width: 100%;
     position: relative;
+    margin: 0 auto;
 } 
 .partners__slide{
     position: relative;
@@ -414,6 +413,16 @@ body{
 }
 .partners__img{
     margin: 0 auto;
+}
+.arrowprev{
+    position: absolute;
+    top:calc(50% - 25px);
+    left: -50px;
+    transform: rotate(180deg);
+    color: #000000;
+    display: block;
+    border: 0;
+    background: none;
 }
 .arrownext{
     position: absolute;

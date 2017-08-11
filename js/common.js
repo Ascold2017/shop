@@ -1,6 +1,7 @@
 ;"use strict";
 $(document).ready(function(){
    // Пользовательские функции 
+    /*
    $(".top_slider").slick({
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -20,11 +21,12 @@ $(document).ready(function(){
         
       ]
    });
-    
+    */
     $(".partners_slider").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: true,
+        prevArrow:'<button type="button" class="arrowprev"><img src="img/arrownextblack.png" alt="prev" /></button>',
          nextArrow:'<button type="button" class="arrownext"><img src="img/arrownextblack.png" alt="next" /></button>',
         responsive: [
         {
