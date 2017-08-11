@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+ 
+</head>
+
+<body>
+
+	<!--HEADER START-->
+	<header class="header">
+		<div class="header__top">
+			<div class="wrapper">
+				<div class="header_top_container">
+				    <div class="header__left">
+						<div class="header_lang">
+						    <a href="#" class="lang__link active">Рус</a>
+						    <a href="#" class="lang__link">Eng</a>
+				        </div>
+					</div>
+					<div class="header__right">
+					    <div class="header_auth">
+                            <a href="#" class="auth__link">Вход</a>
+                            <a href="#" class="auth__link">Регистрация</a>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="header_main">
+				<div class="header_main_block">
+				    <div class="header_main_block__left">
+                        <a href="#" class="header_logo">
+                            <img src="img/logo.png" alt="" class="logo__img img-responsive">
+                        </a>
+				    </div>
+				    <div class="header_main_block__right">
+                       <div class="header_phone_block">
+                           <a href="callto:(098) 987 76 56" class="phone__link">
+                                <img class="phone__img" src="img/phone.png" alt="">
+                                <div class="phone__container">
+                                    <div class="phone__number">(098) 987 76 56</div>
+                                    <div class="phone__callme">Обратный звонок</div>
+                                </div>  
+                           </a>
+                       </div>
+                       <div class="header_account_block">
+                           <a href="#" class="basket__link">
+                               <img src="img/basket.png" alt="">
+                           </a>
+                           <a href="#" class="account__link">
+                               <img src="img/account.png" alt="">
+                           </a>
+                       </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--HEADER END-->
+	<nav class="navigation">
+       <div class="nav_mobile">
+           <ul class="mobile_menu_list">
+                <li class="mobile_menu_list__item">
+                    <a href="#" class="menu_link active">МАГАЗИН</a>
+                    <ul class="mobile_menu_list__submenu">
+                        <li class="submenu__item"><a href="#" class="submenu__link">Двигатель, сцепление</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Топливная система</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Трансмиссия</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Передняя ось</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Задняя ось</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Колеса, тормозная система</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Механизны управления</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Кузов</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Электрика</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_list__item"><a href="#" class="menu_link">НОВОСТИ</a></li>
+                <li class="mobile_menu_list__item"><a href="#" class="menu_link">ДОСТАВКА</a></li>
+                <li class="mobile_menu_list__item"><a href="#" class="menu_link">ОПЛАТА</a></li>
+                <li class="mobile_menu_list__item"><a href="#" class="menu_link">АКЦИИ</a></li>
+                <li class="mobile_menu_list__item"><a href="#" class="menu_link">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="mobile_searchform_container">
+                <form action="" class="searchform">
+                    <input type="search" class="search__input">
+                    <button type="submit" class="search__submit"><img src="img/search.png" alt="" class="search__img"></button>
+               </form>
+            </div>
+             
+       </div>
+       <div class="wrapper">
+           <div class="nav_container">
+                <ul class="menu_list">
+                    <li class="menu_list__item">
+                        <a href="#" class="menu_link active">МАГАЗИН</a>
+                        <ul class="menu_list__submenu">
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Двигатель, сцепление</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link">Топливная система</a></li>
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Трансмиссия</a></li>
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Передняя ось</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link">Задняя ось</a></li>
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Колеса, тормозная система</a></li>
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Механизны управления</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link">Кузов</a></li>
+                            <li class=" submenu__item"><a href="#" class="submenu__link">Электрика</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_list__item"><a href="#" class="menu_link">НОВОСТИ</a></li>
+                    <li class="menu_list__item"><a href="#" class="menu_link">ДОСТАВКА</a></li>
+                    <li class="menu_list__item"><a href="#" class="menu_link">ОПЛАТА</a></li>
+                    <li class="menu_list__item"><a href="#" class="menu_link">АКЦИИ</a></li>
+                    <li class="menu_list__item"><a href="#" class="menu_link">КОНТАКТЫ</a></li>
+                </ul>
+                <form action="" class="searchform">
+                    <input type="search" class="search__input">
+                    <button type="submit" class="search__submit"><img src="img/search.png" alt="" class="search__img"></button>
+               </form>
+           </div>
+	   </div>
+	</nav>
+	
+	<!--MAIN START-->
+	<div class="wrapper">
+        <div class="main_container">
+            <aside class="sidebar">
+                <article class="price_form_container">
+                    <form action="" class="price_form__form">
+                        <div class="price_form__title">Цена("<i class="fa fa-rub" aria-hidden="true"></i>")</div>
+                        <div class="price_input_wrap"><input type="text" class="price_form__input start">- </div>
+                        <div class="price_input_wrap"><input type="text" class="price_form__input end"></div>
+                        <div class="progress_container">
+                            <span class="price_form__start">120</span>
+                            <div id="slider"></div>
+                            <span class="price_form__end">28500</span>
+                        </div>
+                    </form>
+                </article>
+                <article class="brand_container">
+                    <div class="brand__title">Производитель</div>
+                    <ul class="brand_list">
+                        <li class="brand__item"><input class="brand__check" type="checkbox">AUTOLUX</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">AUTOPROFI</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">AVS</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">BERKUT</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">Bluesonic</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">CAMELION</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">COBRA</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">CRUNCH</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">DOD</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">GYS</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">HYUNDAI</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">INSPECTOR</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">INTEGO</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">INTRO</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">KS-IS</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">MIO</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">MOBILEN</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">NAPOLEX</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">NEO-TEC</li>
+                        <li class="brand__item"><input class="brand__check" type="checkbox">OptiMate</li>
+                    </ul>
+                </article>
+            </aside>
+            
+            <main class="main">
+               <section class="section__categories">
+                   
+                   <h3 class="section_product__title">Автомобильные компрессоры</h3>
+                   <div class="select_container">
+                       <span class="select__info">Сортировать по:</span>
+                       <select name="selectSort" id="" class="select__list">
+                           <option value="" class="select__option">популярности</option>
+                           <option value="" class="select__option">релевантности</option>
+                           <option value="" class="select__option">дате добавления</option>
+                       </select>
+                   </div>
+                    <div class="categories__container">
+                        <div class="product_slide">
+                              <img src="img/stock.png" alt="" class="stock_label">
+                               <img src="img/product.png" alt="" class="product__img">
+                               <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                               <div class="product_article">
+                                   <span class="article__title">Артикул: </span>
+                                   <span class="article__num">PM65434</span>
+                               </div>
+                               <div class="product_rating">
+                                   <span class="rating__stars">
+                                       <span class="rating__sprite"></span>
+                                   </span>
+                                   <span class="rating__score">4,8 (10)</span>
+                               </div>
+                               <div class="product_buy">
+                                   <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                   <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                                   <a href="#" class="product_basket__link">
+                                       <img class="img-responsive" src="img/smallbasket.png" alt="">
+                                   </a>
+                               </div>
+                           </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="product_slide">
+                          <img src="img/stock.png" alt="" class="stock_label">
+                           <img src="img/product.png" alt="" class="product__img">
+                           <div class="product__title">Автомобильный портативный компрессор (Беркут), BERKUT R15</div>
+                           <div class="product_article">
+                               <span class="article__title">Артикул: </span>
+                               <span class="article__num">PM65434</span>
+                           </div>
+                           <div class="product_rating">
+                               <span class="rating__stars">
+                                   <span class="rating__sprite"></span>
+                               </span>
+                               <span class="rating__score">4,8 (10)</span>
+                           </div>
+                           <div class="product_buy">
+                               <div class="product__old_price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></div>
+                               <span class="product__price">3456 <span class="sign"><i class="fa fa-rub" aria-hidden="true"></i></span></span>
+                               <a href="#" class="product_basket__link">
+                                   <img class="img-responsive" src="img/smallbasket.png" alt="">
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="pagination_container">
+                       <ul class="pagination">
+                           <li class="current"><a href="">1</a></li>
+                           <li><a href="">2</a></li>
+                           <li><a href="">3</a></li>
+                           <li><a href="">4</a></li>
+                           <li><a href="">5</a></li>
+                           <li><a href="">6</a></li>
+                           <li class="unavailable"><a href="">&hellip;</a></li>
+                           <li><a href="">10</a></li>
+                           <li class="arrow unavailable"><a href=""><img src="img/prevarrowtiny.png" alt=""></a></li>
+                           <li class="arrow"><a href=""><img src="img/nextarrowtiny.png" alt=""></a></li>
+                       </ul>
+                   </div>
+                   
+                </section>
+            </main>
+        </div>
+    </div>
+   <!--FOOTER START-->
+	<footer class="footer">
+	    <div class="footer_menu">
+	        <div class="wrapper">
+		        <ul class="footer_menu__list">
+                    <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">МАГАЗИН</a></li>
+		            <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">НОВОСТИ</a></li>
+                    <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">ДОСТАВКА</a></li>
+                    <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">ОПЛАТА</a></li>
+                    <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">АКЦИИ</a></li>
+                    <li class="footer_menu_list__item"><a href="#" class="footer_menu__link">КОНТАКТЫ</a></li>
+		        </ul>
+		    </div>
+	    </div>
+		<div class="footer_bottom">
+		    <div class="copyright">
+		        © 2015 Magento Demo Store. All Rights Reserved. 
+		    </div>
+		</div>
+	</footer>
+	<!--FOOTER END-->
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/categories.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+</body>
+</html>
