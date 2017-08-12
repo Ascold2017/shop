@@ -18,6 +18,10 @@
     color: #000000;
     font-family: "Proxima Nova";
     line-height: 35px;
+    .sign{
+        font-size: 12px;
+        font-family: 'Arial';
+    }
 }
 .price_input_wrap{
     display: inline-block;
@@ -26,6 +30,7 @@
     height: 20px;
     border: 1px solid #e6e6e6;
     position: relative;
+    text-align: center;
     &::after{
         content: '-';
         position: absolute;
@@ -213,6 +218,7 @@
             height: 10px;
             border: 1px solid #e6e6e6;
             background-color: #ffffff;
+            margin-right: 10px;
         }
     }
 }

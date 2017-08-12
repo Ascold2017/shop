@@ -146,7 +146,7 @@ $(document).ready(function(){
 
     } );
     // фильтрация ввода в поля
-	jQuery('input').keypress(function(event){
+	jQuery('.price_form__input, .price_form__start, .price_form__end, .form_counter__input').keypress(function(event){
 		var key, keyChar;
 		if(!event) var event = window.event;
 		
@@ -159,5 +159,23 @@ $(document).ready(function(){
 		if(!/\d/.test(keyChar))	return false;
 	
 	});
+    
+    $(function(){
+        $('.form_counter__button.less').click(function () {
+                var $input = $(this).parent().find('.form_counter__input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.form_counter__button.more').click(function () {
+                var $input = $(this).parent().find('.form_counter__input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+    });
+    
     $(".product_photo").fancybox();
 });
