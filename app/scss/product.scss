@@ -18,6 +18,9 @@
 .gallery__preview{
     margin-top: 15px;
     display: flex;
+    .product_photo{
+        width: 25%;
+    }
 }
 //GALLERY END
 //CONTENT BEGIN
@@ -129,5 +132,4 @@
 .product_stock.productpage{
     padding: 0 0 50px;
 }
-
 @import "product_media";

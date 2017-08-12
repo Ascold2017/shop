@@ -1,7 +1,12 @@
-
+.main{
+    width: calc(100% - 240px);
+}
 //SIDEBAR BEGIN
 .sidebar{
     width: 240px;
+}
+.section__categories{
+    width: 100%;
 }
 //PRICE FORM BEGI
 .price_form_container{
@@ -131,9 +136,9 @@
 }
 .categories__container{
     margin-top: 25px;
-    display: flex;
+   display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
     .product_slide{
         width: 20%;
