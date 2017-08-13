@@ -29,25 +29,32 @@ $(document).ready(function(){
             
         },
         {
-            breakpoint: 720,
+            breakpoint: 830,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 720,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 450,
+            breakpoint: 580,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
             }
+        },
+        {
+        breakpoint: 380,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
         },
       ]
     });
