@@ -55,7 +55,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('sass', function() {
-	 var mainCss = gulp.src('app/scss/**/*.scss!product.scss')
+	 var mainCss = gulp.src(['app/scss/**/main.scss'])
         .pipe(plumber())
         .pipe(scss())
         .pipe(rename({suffix: '.min', prefix : ''}))
@@ -64,7 +64,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
     
-    var productCss=gulp.src(['app/scss/**/product.scss','app/scss/**/product_media.scss'] )
+    var productCss=gulp.src(['app/scss/**/product.scss'] )
         .pipe(plumber())
         .pipe(scss())
         .pipe(rename({suffix: '.min', prefix : ''}))
@@ -73,7 +73,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
     
-   var basketCss =gulp.src(['app/scss/**/basket.scss','app/scss/**/basket_media.scss'] )
+   var basketCss =gulp.src(['app/scss/**/basket.scss'] )
         .pipe(plumber())
         .pipe(scss())
         .pipe(rename({suffix: '.min', prefix : ''}))
@@ -81,7 +81,7 @@ gulp.task('sass', function() {
         .pipe(cleanCSS().on("error", notify.onError())) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
-    var categoriesCss=gulp.src(['app/scss/**/categories.scss','app/scss/**/categories_media.scss'] )
+    var categoriesCss=gulp.src(['app/scss/**/categories.scss'] )
         .pipe(plumber())
         .pipe(scss())
         .pipe(rename({suffix: '.min', prefix : ''}))
